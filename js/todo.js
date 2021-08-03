@@ -8,6 +8,7 @@ const TODOS_KEY = "todos";
 
 let toDos = [];
 
+
 // to do 저장
 function saveToDos() {
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos)); // toDos를 String형으로 저장
@@ -64,4 +65,5 @@ if(savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos); // String형으로 저장된 saveToDos를 오브젝트로 변환
     toDos = parsedToDos; // 값이 있을 경우 이전의 to do (parsedToDos)를 toDos에 저장
     parsedToDos.forEach(paintToDo);
+
 }

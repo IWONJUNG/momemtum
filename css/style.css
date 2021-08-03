@@ -1,7 +1,43 @@
 body {
-    background-color: pink;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2em;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+}
+
+
+button:hover{
+    cursor: pointer;
 }
 
 .hidden {
     display: none;
+}
+
+#weather {
+    text-align: right;
+    color:#585858;
+    font-size: 0.5em;
+}
+
+#clock{
+    font-size: 5em;
+    color: snow;   
+}
+
+#quote {
+    font-size: 0.5em;
 }

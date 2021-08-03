@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Momemtum App</title>
 </head>
 <body>
 
+    
+    <header> 
+        <div id="weather">
+            <span></span> <br>
+            <span></span>
+        </div> 
+    </header>
+
     <form class="hidden" id="login-form">
         <div>
-            <input type="text" required maxlength="15" placeholder="what is your name?">
+            <input type="text" required maxlength="15" placeholder="what is your name?"> <br>
             <button>Log In</button>
         </div>
     </form>
@@ -19,16 +30,19 @@
     <h2 id="clock"> 00 : 00</h2>
     <h1 class="hidden" id="greeting"></h1>
 
-    <form id="todo-form"> 
-        <input type="text" placeholder="Write a To Do and Press Enter" required>
+    <form id="todo-form" class="hidden"> 
+        <input type="text" placeholder="Write a To Do and Enter" required>
     </form>
 
     <ul id="todo-list"></ul>
 
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
+    <footer>
+        <div id="quote">
+            <span></span> <br>
+            <span></span>
+        </div>
+    </footer>
+
 
     
     <script src="js/clock.js"></script>
@@ -36,5 +50,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
